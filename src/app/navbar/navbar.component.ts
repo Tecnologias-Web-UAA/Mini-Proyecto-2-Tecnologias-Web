@@ -6,16 +6,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  name:string="";
   constructor(private router:Router) {
 
    }
 
   ngOnInit(): void {
-    this.name="";
   }
   buscarUnHeroe(nombre:string){
-    this.ngOnInit();
+
   
     this.router.navigate(['/buscador',nombre]);
   }

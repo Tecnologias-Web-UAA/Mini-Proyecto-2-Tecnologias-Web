@@ -12,10 +12,10 @@ export class UnheroeComponent implements OnInit {
   myid:number=0;
   constructor(private heroeService:HeroeService,private activatedRoute:ActivatedRoute) { 
     this.activatedRoute.params.subscribe(params=>{
-      this.myid = params['id'];
+      
       
       console.log(this.myid);
-      this.heroe = heroeService.getUnHeroe(this.myid);
+      this.heroe = heroeService.getUnHeroe( params['id']);
 
 
     });
