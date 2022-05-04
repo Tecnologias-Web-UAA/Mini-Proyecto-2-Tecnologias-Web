@@ -1,0 +1,49 @@
+#mybutton{
+    width: 20%;
+    display: block;
+    margin: auto;
+    
+    
+}
+#mybutton:hover{
+    color: black;
+    font-weight: 800;
+}
+h1{
+    text-shadow: 4px 2px 3px black;
+}
+
+
+.femenino, .masculino{
+    display: inline-block;
+    margin: 0em 5em;
+}
+.masculino{
+    float: right;
+}
+
+.radio{
+    
+    width: 40%;
+    display: block;
+    margin: auto;
+    
+}
+.modal-content{
+    background-color: rgb(51, 51, 51);
+}
+label,.modal-title{
+    color: antiquewhite;
+    display: block;
+    text-align: center;
+ 
+}
+.modal-header img{
+    border-radius: 50%;
+    margin-left: 1em;
+}
+.jumbotron{
+    background-image: url('../../assets/img/fondo_jumbo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

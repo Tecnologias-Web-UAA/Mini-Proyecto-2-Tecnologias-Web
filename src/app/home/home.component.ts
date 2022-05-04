@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from '../usuario';
+import { UsuariosService } from '../shared/usuarios.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  usuario!:Usuario;
+  
+  constructor(private usuarioService:UsuariosService) { 
 
-  constructor() { }
-
+    this.usuario=this.usuarioService.nuevoUsuario();
+    
+  }
   ngOnInit(): void {
   }
-
+  registrar():void{
+    
+    
+   
+    console.log(this.usuario);
+    setTimeout(() => {
+      document.getElementById("confirmacion-button")?.click();
+    }, 4000);
+    this.usuarioService.agregarUsuario(this.usuario);
+    this.limpia();
+  }
+  limpia():void{
+    this.usuario.nombre='';
+    this.usuario.sexo='';
+    this.usuario.correo='';
+    this.usuario.fecha='';
+  }  
 }
