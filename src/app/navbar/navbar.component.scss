@@ -1,0 +1,36 @@
+@media (max-width:992px){
+    
+    .nav_, ul{
+        width: 100%;
+    }
+
+    .nav_ ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-cen{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .boton-icon{
+        display: flex;
+
+    }
+
+    .icono{
+        width: 100vw*0.8;
+        border: 2px solid red;
+        padding-left: 40%;
+    }
+
+    .boton{
+        width: 100vw * 0.2;
+        border: 2px solid red
+    } */
+
+    
+}

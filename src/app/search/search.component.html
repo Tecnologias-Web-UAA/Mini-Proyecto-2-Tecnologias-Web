@@ -1,7 +1,22 @@
-<div class="row animated fadeIn fast" *ngIf="indice==-1">
+<div class="row animated fadeIn fast noexiste" *ngIf="indice==-1">
     <div class="co-md-12">
         <div class="alert alert-info" role="alert">
-            No existen resultados de {{nombreh}}
+            <div class="noexiste">
+                <h2 class="text-center">El Héroe {{ nombreh }} buscado no se encuentra en el sistema</h2>
+                <h4 class="text-justify">Intente con otro héroe de Marvel ó DC...</h4>
+                
+                <div class="imagenes">
+                    <div class="img-1">
+                        <img src="../../assets/img/dc_comics_noexist.jpg" width="35%" height="15%" alt="">
+                        <img src="../../assets/img/marvel_comics_noexist.jpg" width="35%" height="15%" alt=""> 
+                    </div>
+
+                    <div class="img-2">
+                        <img src="../../assets/img/dcmarvel_noexist.jpg" width="35%" height="15%" alt="">
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </div>

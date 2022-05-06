@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse nav_" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active" routerLinkActive="active">
             <a class="nav-link" [routerLink]="['/home']" >Home</a>
@@ -25,7 +25,7 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
-      <div class="form-inline my-2 my-lg-0">
+      <div class="form-inline my-2 my-lg-0 nav-cen">
         <input id="myin" type="text" class="form-control mr-sm-2" placeholder="Buscar Heroe" #buscarTexto (keyup.enter)="buscarUnHeroe(buscarTexto.value)" >
         <button (click)="buscarUnHeroe(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0 " type="button ">Buscar</button>
       </div>
