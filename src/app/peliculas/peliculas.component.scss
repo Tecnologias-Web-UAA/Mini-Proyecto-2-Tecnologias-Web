@@ -1,0 +1,28 @@
+.carousel{
+    box-shadow: 15px 10px 7px rgba(0,0,0,0.8);   
+    border-radius: 5em;
+}
+img{
+    border-radius: 5em;
+    
+}
+p,h5{
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    font-weight: 600;
+}
+button{
+    height: 40px;
+    width: 40px;
+    background: rgba(0,0,0,1);
+    border-radius: 50%;
+    position: absolute;
+    top: 310px;
+    margin: 30px;   
+}
+
+li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

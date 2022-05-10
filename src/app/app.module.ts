@@ -12,6 +12,7 @@ import { UnheroeComponent } from './unheroe/unheroe.component';
 import { FormsModule } from '@angular/forms';
 import { DomseguroPipe } from './domseguro.pipe';
 import { VideoComponent } from './video/video.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { VideoComponent } from './video/video.component';
     SearchComponent,
     UnheroeComponent,
     DomseguroPipe,
-    VideoComponent
+    VideoComponent,
+    PeliculasComponent
   ],
   imports: [
     BrowserModule,
