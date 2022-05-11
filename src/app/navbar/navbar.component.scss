@@ -34,3 +34,33 @@
 
     
 }
+// a:hover{
+//     transform: scale(1.2);
+//     font-weight: 800;
+//     background: rgb(176, 255, 151);
+//     border-radius: 20px;
+// }
+
+nav{
+    background: rgb(32, 125, 231);
+    box-shadow: 0 0 5px 5px ;
+}
+a{
+    color: black;
+}
+.active{
+    transform: scale(1.2);
+    font-weight: 800;
+    background: rgb(176, 255, 151);
+    border-radius: 20px;
+}
+.btn{
+    background: rgb(141, 255, 141);
+}
+#myin:focus{
+    background: black;
+    color: antiquewhite;
+    border-radius: 15px;
+    transform: scale(1.1);
+    
+}

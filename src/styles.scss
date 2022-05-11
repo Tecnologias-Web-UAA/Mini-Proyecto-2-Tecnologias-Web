@@ -46,8 +46,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw 100vh;
+    cursor: url("assets/img/cursor.gif"),auto ;
+  }
+a,button{
+  cursor: url("assets/img/handCursor.gif"),auto ;
+  
 }
-
 .card-columns {
   @include media-breakpoint-only(xl) {
     column-count: 5;
