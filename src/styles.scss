@@ -2,6 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bangers&family=Boogaloo&family=Bungee+Shade&family=Carter+One&family=Concert+One&family=Knewave&family=Lobster&family=Oregano&family=Permanent+Marker&family=Racing+Sans+One&family=Road+Rage&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Skranji&family=Special+Elite&family=VT323&family=Yanone+Kaffeesatz:wght@200&display=swap');
 
+@font-face {
+  font-family: 'Bangers';
+  src: url("assets/fonts/bangers/Bangers.ttf");
+}
+
+@font-face {
+  font-family: 'Mouse';
+  src: url("assets/fonts/mouse-memoirs/MouseMemoirs-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Acme';
+  src: url("assets/fonts/acme/Acme-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Cartoon';
+  src: url("assets/fonts/from-cartoon-blocks/From\ Cartoon\ Blocks.ttf");
+}
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
