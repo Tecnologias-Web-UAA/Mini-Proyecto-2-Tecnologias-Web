@@ -40,23 +40,40 @@
 //     background: rgb(176, 255, 151);
 //     border-radius: 20px;
 // }
+ul li{
+    margin-right: 30px;
+}
 
 nav{
     background: rgb(32, 125, 231);
     box-shadow: 0 0 5px 5px ;
 }
+
+input{
+    font-family: 'Skranji';
+    font-size: 18px;
+}
+
 a{
     color: black;
+    font-family: 'Skranji';
+    font-size: 20px;
 }
+
 .active{
     transform: scale(1.2);
     font-weight: 800;
-    background: rgb(176, 255, 151);
+    background: rgb(213, 115, 2);
     border-radius: 20px;
 }
+
 .btn{
-    background: rgb(141, 255, 141);
+    background: rgb(219, 110, 0);
+    color: black;
+    font-family: 'Skranji';
+    font-size: 15px;
 }
+
 #myin:focus{
     background: black;
     color: antiquewhite;

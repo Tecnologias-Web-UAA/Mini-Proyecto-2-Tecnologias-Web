@@ -1,4 +1,6 @@
-<h1 class="text-center">Heroes <small>Marvel y DC </small></h1>
+<div class="titulo">
+    <h1 class="text-center">Heroes <small class="tit">Marvel y DC </small></h1>
+</div>
 
 <div class="card-columns">
     
@@ -9,6 +11,6 @@
             <p class="card-text bio">{{h.bio}} </p>
             <p class="card-text fecha"><small class="text-muted">{{h.aparicion}} </small></p>
         </div>
-        <a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block" style="cursor: url('assets/img/handCursor.gif'),auto ;">VerMas</a>
+        <div class="btn"><a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block" style="cursor: url('assets/img/handCursor.gif'),auto ;">Ver Mas</a></div>
     </div>
 </div>
