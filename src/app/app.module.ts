@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { DomseguroPipe } from './domseguro.pipe';
 import { VideoComponent } from './video/video.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { PeliculasComponent } from './peliculas/peliculas.component';
     UnheroeComponent,
     DomseguroPipe,
     VideoComponent,
-    PeliculasComponent
+    PeliculasComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
