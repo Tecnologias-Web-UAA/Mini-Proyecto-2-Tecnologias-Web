@@ -4,6 +4,7 @@ import { Usuario } from '../usuario';
   providedIn: 'root'
 })
 export class UsuariosService {
+
   array!:Usuario[];
   constructor() {
     this.array = JSON.parse(localStorage.getItem('users') || '[]');
@@ -16,6 +17,7 @@ export class UsuariosService {
     this.array.push(usuario);
     localStorage.setItem('users',JSON.stringify(this.array))
   }
+  
   nuevoUsuario():Usuario{
     return {
       nombre:'',
