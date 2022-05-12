@@ -27,12 +27,13 @@ export class HomeComponent implements OnInit {
       document.getElementById("confirmacion-button")?.click();
     }, 4000);
     this.usuarioService.agregarUsuario(this.usuario);
-    this.limpia();
+   
+    this.usuario=this.usuarioService.nuevoUsuario();
   }
   limpia():void{
-    this.usuario.nombre='';
-    this.usuario.sexo='';
-    this.usuario.correo='';
-    this.usuario.fecha='';
+   this.usuario.nombre='';
+   this.usuario.sexo='';
+   this.usuario.correo='';
+   this.usuario.fecha='';
   }  
 }
