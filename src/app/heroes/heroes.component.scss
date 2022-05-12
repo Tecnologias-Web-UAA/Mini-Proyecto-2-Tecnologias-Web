@@ -1,19 +1,57 @@
-.card{
-    background-color: rgba(223, 161, 106, 0.603);
-    border: 2.5px solid rgb(210, 3, 3);
+h1,.tit{
+    font-family: 'Bungee Shade';
 }
+
+.titulo{
+    background: rgba(0, 0, 0, 0.574);
+    color: white;
+    border-radius: 15px;
+}
+
+.card{
+    background: rgb(255, 213, 2);
+    border: 2.5px solid rgb(210, 3, 3);
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
 
 .name{
     text-align: center;
+    margin-top: 20px;
+    font-family: 'Bangers';
+    font-size: 28px;
 }
 
 .bio{
     text-align: justify;
+    padding: 5px;
+    margin: 0;
+    font-family: 'Mouse';
 }
 
 .fecha{
     text-align: right;
+    font-family: 'Acme';
+    font-size: 16px;
 }
 img{
     background: rgb(32, 125, 231);
+}
+
+a{
+    background: rgb(213, 115, 2);
+    color: rgb(55, 1, 1);
+    border: 2px solid rgb(164, 2, 2);
+    width: 80%;
+    font-size: 18px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Cartoon';
+    font-weight: bold;
 }
