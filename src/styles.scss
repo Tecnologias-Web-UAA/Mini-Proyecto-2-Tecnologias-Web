@@ -39,9 +39,14 @@
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/print";
 
-
+@font-face {
+  font-family: "Engcomica";
+  src: url("./assets/Engcomica.otf");
+}
 body{
     background: rgba(0,0,0,0.3);
+    width: 100vw;
+    height: 100vh;
     background-image: url("assets/img/fondo_principal.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -50,6 +55,7 @@ body{
   }
 a,button{
   cursor: url("assets/img/handCursor.gif"),auto ;
+  font-family: "Engcomica";
   
 }
 .card-columns {
