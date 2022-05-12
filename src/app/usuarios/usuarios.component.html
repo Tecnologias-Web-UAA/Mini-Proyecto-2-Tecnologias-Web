@@ -1,3 +1,12 @@
-<h1>Sobre comics</h1>
-<hr>
-<p style="text-align: justify;">Aqui va la perra puta wey tabla</p>
+<h2>
+    Fanaticos de comics
+</h2>
+<div *ngIf="! usuarios.length">Los fanaticos no estan presentes</div>
+<div>
+    <article *ngFor="let i of usuarios">
+        <span>{{i.nombre}}</span>
+        <span>{{i.sexo}}</span>
+        <span>{{i.correo}}</span>
+        <span>{{i.fecha}}</span>
+    </article>
+</div>
