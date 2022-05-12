@@ -60,7 +60,10 @@
 @import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/print";
-
+*{
+  cursor: url("assets/img/cursor.gif"),auto ;
+  
+}
 
 body{
     background: rgba(0,0,0,0.3);
@@ -68,7 +71,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw 100vh;
-    cursor: url("assets/img/cursor.gif"),auto ;
   }
 a,button{
   cursor: url("assets/img/handCursor.gif"),auto ;
