@@ -7,12 +7,16 @@ import { SearchComponent } from './search/search.component';
 import { UnheroeComponent } from './unheroe/unheroe.component';
 import { VideoComponent } from './video/video.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'heroes', component: HeroesComponent},
   {path: 'about', component: AboutComponent},
   {path: 'video', component: VideoComponent},
   {path: 'peliculas', component: PeliculasComponent},
+  {path: 'usuarios', component: UsuariosComponent},
+
   
   {path:'heroe/:id',component:UnheroeComponent},
   {path:'buscador/:nombreh',component:SearchComponent},
