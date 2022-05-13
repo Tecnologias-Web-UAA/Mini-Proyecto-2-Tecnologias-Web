@@ -20,32 +20,44 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form [formGroup]="datos" (ngSubmit)="registrar()">
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Nombre:</label>
-            <input [(ngModel)]="usuario.nombre " [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="name" >
+            <label for="recipient-name" class="col-form-label">Nombre</label>
+            <p *ngIf="this.datos.get('nombre')?.errors?.['required']">El campo no puede quedar vacio</p>
+            <p *ngIf="this.datos.get('nombre')?.errors?.['minlength']">(Debe tener minimo 3 caracteres)</p>
+            <p *ngIf="this.datos.get('nombre')?.valid">Nombre valido</p>
+            
+            <input formControlName="nombre"  type="text" class="form-control" id="name" >
           </div>
 
           <div class="form-group">
-            <label for="" class="col-form-label">Sexo:</label><br>
+            <label for="" class="col-form-label">Sexo</label><br>
+            <p *ngIf="this.datos.get('sexo')?.errors?.['required']">El campo no puede quedar vacio</p>
             <div class="femenino">
                 <label for="recipient-radio-femenino">Femenino</label>
-                <input [(ngModel)]="usuario.sexo"  type="radio" class="form-control radio" id="recipient-radio-femenino" name="sex" value="femenino">
+               
+          
+                <input formControlName="sexo"  type="radio" class="form-control radio" id="recipient-radio-femenino" name="sex" value="femenino" >
             </div>
             <div class="masculino">
                 <label for="recipient-radio-masculino">Masculino</label>
-                <input [(ngModel)]="usuario.sexo"  type="radio" class="form-control radio" id="recipient-radio-masculino" name="sex" value="masculino">
+                <input formControlName="sexo"  type="radio" class="form-control radio" id="recipient-radio-masculino" name="sex" value="masculino">
             </div>
           </div>
           
           <div class="form-group">
-            <label for="recipient-email" class="col-form-label">Correo electronico:</label>
-            <input [(ngModel)]="usuario.correo" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="recipient-email"  required>
+            <label for="recipient-email" class="col-form-label">Correo electronico</label>
+            <p *ngIf="this.datos.get('correo')?.errors?.['required']">El campo no puede quedar vacio.</p>
+            <p *ngIf="this.datos.get('correo')?.errors?.['email']">Correo no valido.</p>
+            
+            <input formControlName="correo" type="text" class="form-control" id="recipient-email"  required>
           </div>
           
           <div class="form-group">
-            <label for="recipient-date" class="col-form-label">Fecha:</label>
-            <input [(ngModel)]="usuario.fecha" [ngModelOptions]="{standalone: true}"  type="date" class="form-control"  id="recipient-date" required >
+            <label for="recipient-date" class="col-form-label">Fecha</label>
+            <p *ngIf="this.datos.get('fecha')?.errors?.['required']">El campo no puede quedar vacio.</p>
+           
+            <input formControlName="fecha"   type="date" class="form-control"  id="recipient-date" required >
           </div>
           
 
@@ -53,7 +65,7 @@
       </div>
       <div class="modal-footer">
         <button  type="button" class="btn btn-secondary" data-dismiss="modal" (click)="limpia()" style="cursor: url('assets/img/handCursor.gif'),auto;">Cerrar</button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConfirmacion" data-dismiss="modal" (click)="registrar()"  style="cursor: url('assets/img/handCursor.gif'),auto;"> Registrar datos</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConfirmacion" data-dismiss="modal" (click)="registrar()"  style="cursor: url('assets/img/handCursor.gif'),auto;" [disabled]="datos.invalid"> Registrar datos</button>
       </div>
     </div>
   </div>

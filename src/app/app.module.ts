@@ -9,7 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { SearchComponent } from './search/search.component';
 import { UnheroeComponent } from './unheroe/unheroe.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { DomseguroPipe } from './domseguro.pipe';
 import { VideoComponent } from './video/video.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
@@ -32,7 +32,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
