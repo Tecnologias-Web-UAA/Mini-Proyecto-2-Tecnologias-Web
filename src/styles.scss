@@ -27,6 +27,16 @@
   src: url("assets/fonts/heroes-assemble-font/HeroesAssembleCondensedItalic-GdjO.ttf");
 }
 
+@font-face {
+  font-family: 'American';
+  src: url("assets/fonts/american-captain-font/AmericanCaptain-MdEY.otf");
+}
+
+@font-face {
+  font-family: 'Titan';
+  src: url("assets/fonts/thunder-titan-font/ThunderTitan-yzp5.otf");
+}
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";

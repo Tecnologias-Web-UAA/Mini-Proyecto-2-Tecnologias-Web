@@ -4,21 +4,24 @@ article {
     padding: 10px;
     font-size: 0.9em;
 }
-span {
-    display: inline-block;
-    width: 22%;
-    margin-right: 2%;
-    font-family: 'Comic Sans Ms';
-    color: rgb(148, 116, 9);
+tbody {
+    font-family: 'Mouse';
     font-size: 13;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
-    color: blueviolet;
     text-align: center;
-    
+    font-family: 'American';
+    color: wheat;
+    background: rgba(32, 125, 231, 0.771);
+    font-size: 65px;
+    border-radius: 6px;
 }
 div{
     text-align: center;
     font-size: 25px;
+}
+thead{
+    background: rgb(255, 213, 2);
+    font-family: 'Titan';
 }

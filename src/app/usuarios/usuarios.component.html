@@ -3,10 +3,22 @@
 </h2>
 <div *ngIf="! usuarios.length">Los fanaticos no estan presentes</div>
 <div>
-    <article *ngFor="let i of usuarios">
-        <span>{{i.nombre}}</span>
-        <span>{{i.sexo}}</span>
-        <span>{{i.correo}}</span>
-        <span>{{i.fecha}}</span>
-    </article>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Fecha De Nacimiento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-warning" *ngFor="let user of usuarios">
+            <td scope="row">{{user.nombre}}</td>
+            <td>{{user.sexo}}</td>
+            <td>{{user.correo}}</td>
+            <td>{{user.fecha}}</td>
+          </tr>
+        </tbody>
+      </table>
 </div>
