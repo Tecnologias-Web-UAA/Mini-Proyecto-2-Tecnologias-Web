@@ -22,6 +22,11 @@
   src: url("assets/fonts/from-cartoon-blocks/From\ Cartoon\ Blocks.ttf");
 }
 
+@font-face {
+  font-family: 'Assemble';
+  src: url("assets/fonts/heroes-assemble-font/HeroesAssembleCondensedItalic-GdjO.ttf");
+}
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";

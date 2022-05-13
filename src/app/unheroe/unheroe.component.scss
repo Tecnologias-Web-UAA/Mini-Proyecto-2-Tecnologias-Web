@@ -1,0 +1,50 @@
+.nameMas{
+    font-family: 'Assemble';
+    font-size: 80px;
+}
+
+.name{
+    margin-top: 20px;
+    font-family: 'Bangers';
+    font-size: 35px;
+}
+
+.fecha{
+    text-align: right;
+    font-family: 'Acme';
+    font-size: 45px;
+    margin-left: 30px;
+}
+
+.bio{
+    text-align: justify;
+    padding: 5px;
+    margin: 0;
+    font-family: 'Mouse';
+    font-size: 23px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Cartoon';
+    font-size: 35px;
+    font-weight: 600;
+    cursor: url("../../assets/img/handCursor.gif"),auto;
+}
+
+.contenido{
+    background: white;
+}
+
+.img{
+    background: rgb(32, 125, 231);
+}
+
+.info,.nameMas{
+    background: rgb(255, 213, 2);
+    border: 2.5px solid rgb(210, 3, 3);
+    padding: 8px 20px;
+    margin: 0;
+}
