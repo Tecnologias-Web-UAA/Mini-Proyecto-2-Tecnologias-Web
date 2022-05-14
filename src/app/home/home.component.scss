@@ -16,7 +16,9 @@
     font-weight: 800;
 }
 h1{
-    text-shadow: 4px 2px 3px black;
+    text-shadow: 4px 2px 3px rgb(212, 212, 212);
+    font-family: 'Engcomica';
+    font-size: 80px;
 }
 input{
     cursor: url("../../assets/img/cursor.gif"),auto;
@@ -67,4 +69,12 @@ input{
     color: rgb(251, 255, 33);
     text-align: center;
     
+}
+strong{
+    text-align: center;
+}
+.interesa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

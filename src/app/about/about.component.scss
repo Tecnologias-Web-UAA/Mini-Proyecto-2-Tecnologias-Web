@@ -1,12 +1,32 @@
-$font: 'Comic Sans Ms';
+$font: 'Assemble';
+$font1: 'Mouse';
 
-h1{
-    color: rgb(148, 82, 2);
-    font-family: $font;
+.about{
+    background:rgba(219, 110, 0, 0.699);
+    height: 70px;
+    border-radius: 8px;
 }
 
-    p{
-        color: rgb(255, 102, 0);
-        font-family: $font;
-        font-size: 25px;
-    }
+h1{
+    color: rgb(255, 255, 255);
+    font-family: $font;
+    font-size: 58px;
+    text-shadow: black 4px 4px 2px;
+    text-align: center;
+}
+
+p{
+    color: rgb(255, 102, 0);
+    font-family: $font1;
+     font-size: 25px;
+}
+.parrafos{
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+img{
+    border-radius: 60px;
+    width: 800px;
+    height: 600px;
+}
