@@ -8,15 +8,14 @@ import { FormGroup,FormControl, Validators } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  usuario!:Usuario;
+ 
   datos!:FormGroup;
   constructor(private usuarioService:UsuariosService) { 
 
-    this.usuario=this.usuarioService.nuevoUsuario();
     this.datos=new FormGroup({
       nombre:new FormControl('',[Validators.required,Validators.minLength(3)]),
       sexo:new FormControl('',Validators.required),
-      correo:new FormControl('ejemplo@outlook.com',[Validators.required,Validators.email]),
+      correo:new FormControl('',[Validators.required,Validators.email]),
       fecha:new FormControl('',Validators.required)
       
     });
@@ -28,7 +27,7 @@ export class HomeComponent implements OnInit {
     
     
    
-    console.log(this.usuario);
+    
     setTimeout(() => {
       document.getElementById("confirmacion-button")?.click();
     }, 4000);
@@ -40,4 +39,8 @@ export class HomeComponent implements OnInit {
    this.datos.reset();
    
   }  
+  reg():void{
+    
+    document.getElementById('reg')?.setAttribute('disabled','');
+  }
 }

@@ -9,8 +9,8 @@
         <div class="card-body">
             <h5 class="card-title name">{{h.nombre}}</h5>
             <p class="card-text bio">{{h.bio}} </p>
-            <p class="card-text fecha"><small class="text-muted">{{h.aparicion}} </small></p>
+            <p class="card-text fecha"><small class="text-muted" [style.font-size.px]="'20'">{{h.aparicion}} </small></p>
         </div>
-        <div class="btn"><a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block" style="cursor: url('assets/img/handCursor.gif'),auto ;">Ver Mas</a></div>
+        <div style="cursor: url('assets/img/handCursor.gif'),auto ;" class="btn"><a [routerLink]="['/heroe',i]" class="mb-3 btn btn-outline-primary btn-block" style="cursor: url('assets/img/handCursor.gif'),auto ;">Ver Mas</a></div>
     </div>
 </div>

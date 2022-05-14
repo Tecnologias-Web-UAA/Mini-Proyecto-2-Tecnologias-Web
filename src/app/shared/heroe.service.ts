@@ -14,7 +14,8 @@ export class HeroeService {
     return this.heroes[posicion];
   }
   searchUnHeroe(nomheroe:string):number{
-    let index = this.heroes.findIndex(p => p.nombre === nomheroe);
+    let index = this.heroes.findIndex(p => p.nombre.toLowerCase() === nomheroe.toLowerCase());
     return index;
+
   }
 }

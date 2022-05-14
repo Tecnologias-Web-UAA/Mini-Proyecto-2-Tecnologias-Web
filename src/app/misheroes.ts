@@ -37,7 +37,7 @@ export const HEROES:Heroe[]=[
         casa: "DC"
       },
       {
-        nombre: "Spider-Man",
+        nombre: "Spider Man",
         bio: "Tras ser mordido por una araña radiactiva, obtuvo los siguientes poderes sobrehumanos, una gran fuerza, agilidad, poder trepar por paredes. La fuerza de Spider-Man le permite levantar 10 toneladas o más. Gracias a esta gran fuerza Spider-Man puede realizar saltos íncreibles. Un \"sentido arácnido\", que le permite saber si un peligro se cierne sobre él, antes de que suceda. En ocasiones este puede llevar a Spider-Man al origen del peligro.",
         img: "assets/img/spiderman.png",
         aparicion: "1962-08-01",
@@ -65,7 +65,7 @@ export const HEROES:Heroe[]=[
         casa: "DC"
       },
       {
-        nombre: "rocket",
+        nombre: "Rocket",
         bio: "89P13, también conocido como Rocket, es un individuo genéticamente modificado parecido a un mapache que se convirtió en un criminal al igual que su amigo Groot. Juntos, viajaron ganando recompensas hasta que conocieron a los Guardianes de la Galaxia, con quienes se alió para detener a Ronan de destruir Xandar. Rocket en realidad no tiene poderes, pero fue mejorado genetica y tecnologicamente para ser mas fuerte.",
         img: "assets/img/rocket.png",
         aparicion: "1976-02-04",

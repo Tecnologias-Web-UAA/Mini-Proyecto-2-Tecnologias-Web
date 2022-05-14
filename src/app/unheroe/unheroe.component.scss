@@ -22,9 +22,15 @@
     margin: 0;
     font-family: 'Mouse';
     font-size: 23px;
+    
 }
-
+.img{
+    border: 5px dashed  rgb(255, 213,2);
+   
+}
 a{
+    background: rgb(32, 125, 231);
+    border: 5px dashed  rgb(255, 213,2);
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -32,8 +38,12 @@ a{
     font-size: 35px;
     font-weight: 600;
     cursor: url("../../assets/img/handCursor.gif"),auto;
+    color:black;
 }
-
+a:hover{
+    background: rgb(255,213,2);
+    color: rgb(32, 125, 231);
+}
 .contenido{
     background: rgb(252, 209, 111);
 }

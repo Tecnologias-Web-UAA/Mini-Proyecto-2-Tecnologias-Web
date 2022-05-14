@@ -34,10 +34,12 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
 
+    
+  }
+  timeout():void{
     setTimeout(()=>{
       this.router.navigate(['/heroes']);
     },6000);
 
   }
-
 }
