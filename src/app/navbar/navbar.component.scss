@@ -13,10 +13,24 @@
 
     .nav-cen{
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
- 
+    .bus-inp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bus{
+        width: 180px;
+        height: 35px;
+        margin-top: 35px;
+    }
+
+    .bus:hover{
+        transform: scale(1.1);
+    }
     
 }
 

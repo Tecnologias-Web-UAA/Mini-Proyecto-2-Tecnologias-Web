@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg " >
+<nav class="navbar navbar-expand-lg navbar-light" >
     <a class="navbar-brand" href="#">
         <img src="../../assets/nav.png" width="40" height="40" alt="">
     </a>
@@ -32,9 +32,11 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
       <div class="form-inline my-2 my-lg-0 nav-cen">
-        <img src="assets/img/buscar.png" alt="" width="50px" style="margin-right: 2em;">
-        <input id="myin" type="text" class="form-control mr-sm-2" placeholder="Buscar Heroe" #buscarTexto (keyup.enter)="buscarUnHeroe(buscarTexto.value)" >
-        <button style="cursor: url('assets/img/handCursor.gif'),auto ;" (click)="buscarUnHeroe(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0 " type="button ">Buscar</button>
+        <div class="bus-inp">
+          <img src="assets/img/buscar.png" alt="" width="50px" style="margin-right: 2em;">
+          <input id="myin" type="text" class="form-control mr-sm-2" placeholder="Buscar Heroe" #buscarTexto (keyup.enter)="buscarUnHeroe(buscarTexto.value)" >
+        </div>
+        <button style="cursor: url('assets/img/handCursor.gif'),auto ;" (click)="buscarUnHeroe(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0 bus" type="button ">Buscar</button>
       </div>
     </div>
   </nav>
